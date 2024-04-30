@@ -13,6 +13,7 @@ public class Runnable {
 
         System.out.println("emp1 = " + emp1);
 
+
         //========= INSTANCE FROM ImmutableEmployee CLASS ==========
         ImmutableEmployee emp2 =
                 new ImmutableEmployee("Tamara", "Kalesh", "kalesh@gmail.com");
@@ -32,6 +33,15 @@ public class Runnable {
 //        System.out.println("(str1 == str2) = " + (str1 == str2));
         // .equals() => checks only values
         // == => checks values and data types
+
+
+        //========= INSTANCE FROM RecordEmployee CLASS ==========
+        RecordEmployee recordEmployee1 =
+                new RecordEmployee("RJohn", "RDoes", "rjohn@gmail.com");
+        RecordEmployee recordEmployee2 =
+                new RecordEmployee("RJohn", "RDoes", "rjohn@gmail.com");
+
+        System.out.println("recordEmployee1 = " + recordEmployee1);
 
     }
 }
