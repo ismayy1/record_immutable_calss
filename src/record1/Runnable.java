@@ -41,7 +41,18 @@ public class Runnable {
         RecordEmployee recordEmployee2 =
                 new RecordEmployee("RJohn", "RDoes", "rjohn@gmail.com");
 
+        // no need for toString()
         System.out.println("recordEmployee1 = " + recordEmployee1);
+
+        // no need for getter
+        System.out.println("recordEmployee1.firstName() = " + recordEmployee1.firstName());
+
+        // no need for override .equals() and .hashCode() Methods
+        System.out.println("recordEmployee1.equals(recordEmployee2) = " + (recordEmployee1.equals(recordEmployee2)));
+        System.out.println("(recordEmployee1 == recordEmployee2) = " + (recordEmployee1 == recordEmployee2));
+
+        // no setter
+//        recordEmployee1.firstName() = "Mikail";
 
     }
 }
