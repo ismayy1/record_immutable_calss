@@ -16,5 +16,21 @@ public class Runner {
         //list available products
         service.availableProducts();
 
+
+        // method to update fields
+        // since we can't update any field of record class,
+        // to update any field, we need to add new object and remove existing one
+
+        System.out.println("=================== Updated List ====================");
+        // create new field using values from product2
+        Product updatedProduct = new Product(product2.name(), product2.price(), true);
+
+        // ad newly created record to the products list
+        service.addNewProduct(updatedProduct);
+        // remove old record from the products list
+        service.removeProduct(product2);
+
+        service.availableProducts();
+
     }
 }

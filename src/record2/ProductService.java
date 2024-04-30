@@ -36,4 +36,8 @@ public class ProductService {
         }
     }
 
+    // method to update fields
+    // since we can't update any field of record class,
+    // to update any field, we need to add new object and remove existing one
+
 }
